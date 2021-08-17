@@ -308,11 +308,14 @@ nav ul li a:hover {
   line-height: 14px;
   letter-spacing: 0.105em;
   cursor: pointer;
-  color: #ffffff;
   width: 11.3125em;
   height: 2.4375em;
   position: relative;
   bottom: 4em;
+}
+.btn-premium{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .about-us {
