@@ -313,7 +313,7 @@ nav ul li a:hover {
   position: relative;
   bottom: 4em;
 }
-.btn-premium{
+.btn-premium {
   text-decoration: none;
   color: #ffffff;
 }
@@ -399,9 +399,6 @@ nav ul li a:hover {
 .footer {
   width: 100%;
   background: #6876c0;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 
 .logo-footer-img {
@@ -462,7 +459,6 @@ nav ul li a:hover {
   padding-bottom: 0.5em;
 }
 
-
 @media screen and (min-width: 872px) {
   .content {
     padding: 0px;
@@ -507,6 +503,10 @@ nav ul li a:hover {
     color: #3045b2;
   }
 
+  header {
+    margin-bottom: 0;
+  }
+
   .side-nav {
     float: right;
   }
@@ -533,5 +533,180 @@ nav ul li a:hover {
   .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  .hero {
+    width: 100%;
+    height: 100%;
+    background-image: url(SVG/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-bottom: 4em;
+  }
+  .hero-text {
+    width: 70%;
+    margin-left: 4em;
+  }
+  .hero-text-tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: 0.105em;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .hero-text-subtittle {
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.105em;
+    text-align: left;
+  }
+
+  .download-hero-btn {
+    margin-top: 1em;
+    font-size: 24px;
+    width: 404px;
+    height: 71px;
+    cursor: pointer;
+  }
+
+  .interlude {
+    padding-top: 0;
+    margin-top: 4em;
+    margin-bottom: 15em;
+  }
+
+  .top-text,
+  .bot-text {
+    padding-top: 3em;
+    font-size: 34px;
+    line-height: 17px;
+    letter-spacing: 0.105em;
+    color: #000000;
+    padding-bottom: 1em;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .details-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .inventary {
+    align-items: left;
+    background-position: left;
+    height: 30em;
+    width: 31em;
+    margin-right: 30em;
+  }
+  .tittle {
+    font-size: 48px;
+    line-height: 57px;
+    margin-bottom: 0;
+  }
+  .text-beneath {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .devolutions {
+    align-items: left;
+    background-position: left;
+    height: 31em;
+    width: 32em;
+  }
+
+  .delivery {
+    align-items: left;
+    background-position: left;
+    height: 31em;
+    width: 31em;
+    margin-right: 20em;
+  }
+
+  .reports {
+    align-items: left;
+    background-position: left;
+    height: 30em;
+    width: 31em;
+    margin-left: 20em;
+  }
+
+  .container-premium {
+    height: 20em;
+    width: 100%;
+  }
+
+  .premium-text {
+    font-size: 30px;
+    line-height: 57px;
+    text-align: left;
+    margin-left: 3em;
+    width: 50%;
+  }
+  .this-word {
+    display: inline;
+  }
+
+  .img-interlude-premium {
+    height: 17em;
+    width: 17em;
+    margin-right: 10em;
+    margin-top: 2em;
+  }
+
+  .download-premium-btn {
+    width: 404px;
+    height: 71px;
+    position: relative;
+    bottom: 4em;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 1em;
+    margin-left: 8em;
+  }
+  .tittle-us {
+    font-size: 48px;
+    line-height: 57px;
+    width: 100%;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .first-person-description {
+    width: 31em;
+    height: 35em;
+    background-size: contain;
+  }
+  .second-person-description {
+    background-size: contain;
+    width: 32em;
+    height: 34em;
+    margin-bottom: 5em;
+  }
+  .name {
+    font-size: 38px;
+    line-height: 47px;
+  }
+  .job {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .resume {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
