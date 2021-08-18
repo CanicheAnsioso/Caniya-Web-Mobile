@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment-form-stylesheet.css" />
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>PAYMENT PAGE</title>
+  </head>
+  <body>
+    <header>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <div class="content">
+        <a class="logo-container" href="index.html">
+          <img class="logo-img" src="SVG-Mobile/Logo.svg" />Cani-YA</a
+        >
+        <div class="toggler">
+          <img src="SVG-Mobile/hamburger.svg" style="width: 20px; height: 20px" alt="toggler" />
+        </div>
+
+        <nav>
+          <ul>
+            <li class="hover-underline-animation"><a href="#" class="active">HOME</a></li>
+            <li class="hover-underline-animation">
+              <a href="#"><div class="this-word">PREMIUM</div></a>
+            </li>
+            <li class="hover-underline-animation"><a href="#">NOSOTROS</a></li>
+            <li class="hover-underline-animation"><a href="#">CONTACTO</a></li>
+          </ul>
+          <!-- Side navigation on desktop -->
+          <div class="side-nav">
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+            <h2 class="tittle-payment">FORMAS DE PAGO</h2>
+                <h3 class="subtittle-payment">ELEGÍ EL MÉTODO QUE TE CONVENGA</h3>
+                <div class="types-of-payment-avaibles">
+                <img src="SVG-Mobile/credit-debit.svg" alt="Credito/debito" class="select-type-of-pay" id="debitSelector">
+                <img src="SVG-Mobile/cash-pay.svg" alt="Cash" class="select-type-of-pay" id="cashSelector">
+                <img src="SVG-Mobile/deposit-transf.svg" alt="Deposito/Transferencia" class="select-type-of-pay" id="depositSelector">
+            </div>
+            <div class="col-12 col-lg-6">
+                <br><div class="user-data-tittle">INFORMACIÓN DE USUARIO</div><br>
+        <form action="" class="payment-data">
+            <input class="user-data" type="name" name="fullName" placeholder="NOMBRE COMPLETO" /><br>
+            <br><input class="user-data" type="name" name="user" placeholder="USUARIO" /><br>
+            <br><select class="user-data" name="province" form="filterForm">
+                <option class="user-data" disabled selected>Provincia</option>
+                <option class="user-data" value="buenos aires">Buenos Aires Interior</option>
+                <option class="user-data" value="departamento">Capital Federal</option>
+                <option class="user-data" value="chalet">Buenos Aires - Alrededores</option>
+                </select><br>
+                <br><input class="user-data" type="name" name="alocation" placeholder="LOCALIDAD" /><br>
+        </form>
+    </div>
+    <div class="col-12 col-lg-6">
+        <br><div class="user-data-tittle">INFORMACIÓN DE PAGO</div><br>
+        <form action="" class="payment-data">
+            <input class="user-data" type="number" name="cardNumber" placeholder="NÚMERO DE LA TARJETA" /><br>
+            <br><input class="user-data" type="letter" name="refnumber" placeholder="NOMBRE COMPLETO" /><br>
+            <br><input class="user-data" type="number" name="refnumber" placeholder="FECHA DE CADUCIDAD" /><br>
+            <br><input class="user-data" type="number" name="refnumber" placeholder="CVV" /><br>
+        </form>
+    </div>
+    <div class="col-12 btn">
+        <button class="btn-pay">PAGAR</button>
+    </div>
+    </div>
+    </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="logo-footer"><img class="logo-footer-img" src="SVG-Mobile/logo-footer.svg" />Cani-YA</div>
+        <div class="list-options">
+          <a class="decorations" href="#">Contacto</a><br />
+          <a class="decorations" href="#">Problemas Técnicos</a><br />
+          <a class="decorations" href="#">Políticas de Privacidad</a><br />
+        </div>
+        <div class="socials-footer">Seguinos en <img class="socials" src="SVG-Mobile/socials.svg" /></div>
+        <hr class="div-line" />
+        <div class="copyright">© 2021, Cani-Ya</div>
+      </div>
+    </footer>
+    <script src="indexjs.js"></script>
+  </body>
+</html>
