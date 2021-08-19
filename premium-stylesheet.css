@@ -352,6 +352,10 @@ main {
 }
 
 @media screen and (min-width: 872px) {
+  
+  header{
+    margin-bottom: 0;
+  }
   .content {
     padding: 0px;
     display: flex;
@@ -421,5 +425,49 @@ main {
   .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  .premium-hero {
+    align-items: center;
+    background-image: url(SVG/hero-premium-web.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto;
+    width: 100%;
+    height: 30em;
+    text-align: center;
+  }
+  .tittle-premium {
+    font-size: 56px;
+    line-height: 66px;
+    padding-bottom: 0;
+  }
+  .this-word {
+    color: #e7cd47;
+  }
+  .premium-list {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .premium-list-decor {
+    list-style: url(SVG/check.svg) !important;
+    
+  }
+
+  .plan-square {
+    width: 70%;
+  }
+  .cheap {
+    border: 6px solid rgba(220, 80, 157, 0.76);
+    margin-left: 10em;
+  }
+  .normal {
+    border: 6px solid #9fadf7;
+    margin-left: 6em;
+  }
+  
+  .expensive {
+    border: 6px solid #03cffc;
+    margin-left: 3em;
   }
 }

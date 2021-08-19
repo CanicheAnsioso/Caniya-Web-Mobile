@@ -8,8 +8,10 @@ $(function() {
 const debitSelector = document.getElementById("debitSelector");
 const cashSelector = document.getElementById("cashSelector");
 const depositSelector = document.getElementById("depositSelector");
+const debitForm = document.getElementById("debitForm");
+const transferMessage = document.getElementById("transferMessage");
 
-debitSelector.addEventListener("mouseover", () => {
+debitSelector.addEventListener("mouseover","click" () => {
 	debitSelector.src = "SVG-Mobile/debit-selected.svg ";
 	
   });

@@ -106,7 +106,7 @@ nav ul li a:hover {
   color: #000000;
 }
 
-.subtittle-payment {
+.subtittle-payment, .transfer-text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -121,6 +121,11 @@ nav ul li a:hover {
   height: 85px;
   cursor: pointer;
 }
+
+.payment-form, .btn-pay, .transfer-text{
+  display: none;
+}
+
 
 .user-data-tittle {
   font-style: normal;
@@ -164,6 +169,8 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .footer {
+  position: fixed;
+    bottom: 0;
     margin-top: 3em;
     width: 100%;
     background: #6876c0;
@@ -302,5 +309,20 @@ nav ul li a:hover {
   .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  .select-type-of-pay {
+    width: 300px;
+    height: 185px;
+    margin: 3em 3em 3em 3em;
+  }
+  .tittle-payment {
+    font-size: 40px;
+    line-height: 57px;
+  }
+  
+  .subtittle-payment {
+    font-size: 20px;
+    line-height: 28px;
+    
   }
 }

@@ -46,43 +46,80 @@
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="row justify-content-center text-center">
-            <h2 class="tittle-payment">FORMAS DE PAGO</h2>
-                <h3 class="subtittle-payment">ELEGÍ EL MÉTODO QUE TE CONVENGA</h3>
-                <div class="types-of-payment-avaibles">
-                <img src="SVG-Mobile/credit-debit.svg" alt="Credito/debito" class="select-type-of-pay" id="debitSelector">
-                <img src="SVG-Mobile/cash-pay.svg" alt="Cash" class="select-type-of-pay" id="cashSelector">
-                <img src="SVG-Mobile/deposit-transf.svg" alt="Deposito/Transferencia" class="select-type-of-pay" id="depositSelector">
-            </div>
-            <div class="col-12 col-lg-6">
-                <br><div class="user-data-tittle">INFORMACIÓN DE USUARIO</div><br>
-        <form action="" class="payment-data">
-            <input class="user-data" type="name" name="fullName" placeholder="NOMBRE COMPLETO" /><br>
-            <br><input class="user-data" type="name" name="user" placeholder="USUARIO" /><br>
-            <br><select class="user-data" name="province" form="filterForm">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+          <h2 class="tittle-payment">FORMAS DE PAGO</h2>
+          <h3 class="subtittle-payment">ELEGÍ EL MÉTODO QUE TE CONVENGA</h3>
+          <div class="types-of-payment-avaibles">
+            <img
+              src="SVG-Mobile/credit-debit.svg"
+              alt="Credito/debito"
+              class="select-type-of-pay"
+              id="debitSelector"
+            />
+            <img src="SVG-Mobile/cash-pay.svg" alt="Cash" class="select-type-of-pay" id="cashSelector" />
+            <img
+              src="SVG-Mobile/deposit-transf.svg"
+              alt="Deposito/Transferencia"
+              class="select-type-of-pay"
+              id="depositSelector"
+            />
+          </div>
+          <div class="col-12 col-lg-6 payment-form" id="debitForm">
+            <br />
+            <div class="user-data-tittle">INFORMACIÓN DE USUARIO</div>
+            <br />
+            <form action="" class="payment-data">
+              <input class="user-data" type="name" name="fullName" placeholder="NOMBRE COMPLETO" /><br />
+              <br /><input class="user-data" type="name" name="user" placeholder="USUARIO" /><br />
+              <br /><select class="user-data" name="province" form="filterForm">
                 <option class="user-data" disabled selected>Provincia</option>
                 <option class="user-data" value="buenos aires">Buenos Aires Interior</option>
                 <option class="user-data" value="departamento">Capital Federal</option>
-                <option class="user-data" value="chalet">Buenos Aires - Alrededores</option>
-                </select><br>
-                <br><input class="user-data" type="name" name="alocation" placeholder="LOCALIDAD" /><br>
-        </form>
-    </div>
-    <div class="col-12 col-lg-6">
-        <br><div class="user-data-tittle">INFORMACIÓN DE PAGO</div><br>
-        <form action="" class="payment-data">
-            <input class="user-data" type="number" name="cardNumber" placeholder="NÚMERO DE LA TARJETA" /><br>
-            <br><input class="user-data" type="letter" name="refnumber" placeholder="NOMBRE COMPLETO" /><br>
-            <br><input class="user-data" type="number" name="refnumber" placeholder="FECHA DE CADUCIDAD" /><br>
-            <br><input class="user-data" type="number" name="refnumber" placeholder="CVV" /><br>
-        </form>
-    </div>
-    <div class="col-12 btn">
-        <button class="btn-pay">PAGAR</button>
-    </div>
-    </div>
-    </div>
+                <option class="user-data" value="chalet">Buenos Aires - Alrededores</option></select
+              ><br />
+              <br /><input class="user-data" type="name" name="alocation" placeholder="LOCALIDAD" /><br />
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 payment-form" id="debitForm">
+            <br />
+            <div class="user-data-tittle">INFORMACIÓN DE PAGO</div>
+            <br />
+            <form action="" class="payment-data">
+              <input
+                class="user-data"
+                type="number"
+                name="cardNumber"
+                placeholder="NÚMERO DE LA TARJETA"
+              /><br />
+              <br /><input
+                class="user-data"
+                type="letter"
+                name="refnumber"
+                placeholder="NOMBRE COMPLETO"
+              /><br />
+              <br /><input
+                class="user-data"
+                type="number"
+                name="refnumber"
+                placeholder="FECHA DE CADUCIDAD"
+              /><br />
+              <br /><input class="user-data" type="number" name="refnumber" placeholder="CVV" /><br />
+            </form>
+          </div>
+
+          <div class="col-12 btn">
+            <button class="btn-pay" id="payButton">PAGAR</button>
+          </div>
+          <div class="transfer-text" id="transferMessage">
+            <br><span style="font-weight: bold;">Bank account number:</span> 123-786-954<br>
+            <br><span style="font-weight: bold;">Bank account name:</span> Esteban Quito<br>
+            <br><span style="font-weight: bold;">Bank branch:</span> New York<br>
+            <br>Una vez realizada la operación, recordá mandar un mail con el recibo de la transferencia y<br>tus datos de user (nombre, usuario, localidad y plan elegido) a:<br>
+            <br><span style="font-weight: bold;">ivanyvenian@gmail.com</span>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
